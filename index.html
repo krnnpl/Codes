@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen">
+            <h2>Username</h2>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button id="login-button">Login</button>
+        </div>
+
+        <!-- Forum Screen -->
+        <div id="forum" class="hidden">
+            <header>
+                <h2>Threads</h2>
+                <span id="logged-in-user"></span>
+                <button id="create-thread-button">New Thread</button>
+            </header>
+            <ul id="thread-list"></ul>
+
+            <div id="thread-detail" class="hidden">
+                <h3 id="thread-title"></h3>
+                <ul id="post-list"></ul>
+                <textarea id="new-post-content" placeholder="Add your reply"></textarea>
+                <button id="add-post-button">Post</button>
+                <button id="delete-thread-button" class="danger">Delete Thread</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
